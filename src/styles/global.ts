@@ -15,12 +15,17 @@ export const GlobalStyles = createGlobalStyle`
   body {
     background: ${({ theme }) => theme['gray-900']};
     color: ${({ theme }) => theme['gray-300']};
+    -webkit-font-smoothing: antialiased;
   }
 
   body, input, textarea, button {
     font-size: 1rem;
     font-weight: 400;
     font-family: 'Roboto', sans-serif;
+  }
+
+  button {
+    cursor: pointer;
   }
 
 `
